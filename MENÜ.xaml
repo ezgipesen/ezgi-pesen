@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ANASAYFA.MENÜ"
+             Title="MENÜ" FlyoutLayoutBehavior="Popover"
+            Background="purple">
+    <FlyoutPage.Flyout>
+        <ContentPage Title="Menü" >
+            <StackLayout >
+                <Button Text="Ana Sayfa" Clicked="Button_Clicked" Background="purple"/>
+                <Button Text="Kredi Hesaplama" Clicked="Button_Clicked_2" Background="purple"/>
+                <Button Text="Vücut Kitle İndeksi" Clicked="Button_Clicked_1" Background="purple"/>
+                <Button Text="Renk Seçici" Clicked="Button_Clicked_3" Background="purple"/>
+                <Button Text="Yapılacaklar" Clicked="Button_Clicked_4" Background="purple"/>
+            </StackLayout>
+        </ContentPage>
+    </FlyoutPage.Flyout>
+
+    <FlyoutPage.Detail>
+        <ContentPage>
+            <StackLayout Grid.Row="0" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                <Image Source="your_image.png" WidthRequest="200" HeightRequest="200" />
+                <Label Text="Ezgi PESEN" FontSize="Large" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Bartın Üniversitesi Bilgisayar Mühendisliği" FontSize="Medium" />
+                <Label Text="ÖDEV-1" FontSize="Medium" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+        </ContentPage>
+    </FlyoutPage.Detail>
+
+</FlyoutPage>

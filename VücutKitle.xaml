@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ANASAYFA.VücutKitle"
+             Title="VücutKitle"
+             BackgroundColor="AliceBlue">
+    <StackLayout Margin="20">
+        <Label Text="Vücut Kitle İndeksi Hesaplama" FontSize="Large" TextColor="Black" HorizontalOptions="Center" Margin="0,20,0,0"/>
+
+        <StackLayout Margin="0,20,0,0">
+            <Label Text="Kilonuz (kg):" TextColor="Black" FontSize="Medium"/>
+            <Entry x:Name="kiloEntry" Placeholder="Kilonuzu girin" Keyboard="Numeric"/>
+        </StackLayout>
+
+        <StackLayout Margin="0,20,0,0">
+            <Label Text="Boyunuz (cm):" TextColor="Black" FontSize="Medium"/>
+            <Entry x:Name="boyEntry" Placeholder="Boyunuzu girin" Keyboard="Numeric"/>
+        </StackLayout>
+
+        <StackLayout Margin="0,20,0,0">
+            <Button Text="Hesapla" Clicked="HesaplaButton_Clicked"/>
+        </StackLayout>
+
+        <StackLayout Margin="0,20,0,0">
+            <Label x:Name="sonucLabel" Text="" FontSize="Medium" TextColor="Black" HorizontalTextAlignment="Center"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
